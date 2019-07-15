@@ -1,0 +1,42 @@
+.footer {
+    padding: 5rem 0;
+    background-color: #1c1d21;
+    text-align: center;
+    color: gray;
+    i {
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: $main-color;
+        color: white;
+        margin-right: .5rem;
+        transition: 250ms background-color ease;
+    }
+
+    i:hover {
+        background-color: $main-color-gray;
+    }
+}
+
+.logo-lg {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 250ms color ease;
+    margin-bottom: 3rem;
+}
+
+.logo-lg:hover {
+    color: lightgray;
+}
+
+.footer__sm-box {
+    display: inline-block;
+}
+
+.footer__text {
+    margin-top: 2rem;
+    font-size: .8rem;
+}

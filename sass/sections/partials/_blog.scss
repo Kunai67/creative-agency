@@ -1,0 +1,28 @@
+.blog {
+    padding: 5rem 0;
+    background-color: #eeeeee;
+    .row {
+        margin-top: 3rem;
+    }
+
+    .card-body {
+        background-color: white;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.blog__details {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+
+    i {
+        color: $main-color;
+    }
+
+    span, i {
+        margin-right: .5rem;
+    }
+}

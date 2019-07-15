@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__container {
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+.header__nav {
+    background: transparent;
+    color: inherit;
+    margin: 0 auto;
+    width: 80%;
+    transition: 250ms padding ease;
+}
+
+.header__collapse-container {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav-link__text {
+    position: relative;
+}
+
+.nav-link__text::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: $main-color;
+    bottom: -.25rem;
+    left: 0;
+    transition: 250ms width ease;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+
+
+.logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+//Hovers 
+.nav-link:hover .nav-link__text::before,
+.nav-link.active .nav-link__text::before {
+    width: 100%;
+}
+
+// Utility Classes (JS)
+.js--header-container-bg-white {
+    background-color: white;
+    color: black !important;
+    z-index: 100;
+    border-bottom: 1px solid lightgray;
+
+    a:hover {
+        color: $main-color !important;
+    }
+
+    .nav-link:hover .nav-link__text::before,
+    .nav-link.active .nav-link__text::before {
+        width: 100%;
+        height: 2px;
+    }
+
+
+    .nav-link.active {
+        color: $main-color;
+    }
+}
+
+.js--header-nav-py0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

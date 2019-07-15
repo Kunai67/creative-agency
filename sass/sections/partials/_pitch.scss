@@ -1,0 +1,36 @@
+.pitch {
+    color: gray;
+    padding: 5rem 0;
+    background-color: #eee;
+    .row {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: left;
+        color: black;
+    }
+
+    h2::before {
+        margin: 1rem 0 0 0;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: .5rem;
+    }
+
+    i {
+        color: $main-color;
+        font-size: .9rem;
+        border: 1px solid $main-color;
+        border-radius: 50%;
+        padding: .25rem;
+        margin-right: .5rem;
+    }
+}

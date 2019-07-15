@@ -1,0 +1,73 @@
+.team {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.team__member-box {
+    background: #eeeeee;
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+.team__member-details {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+    h3, p {
+        margin-bottom: 0;
+        transition: 250ms color ease;
+    }
+
+    p {
+        text-transform: uppercase;
+        color: gray;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+}
+
+.team__member-box::before {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    z-index: 1;
+}
+
+.team__member-box:hover::after {
+    height: 100%;
+}
+
+.team__member-links {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    z-index: 1;
+    transition: 250ms opacity ease;
+    opacity: 0;
+
+    i {
+        display: inline-block;
+        padding: 1rem;
+        background-color: $main-color;
+        color: white;
+        transition: 250ms opacity ease;
+    }
+
+    i:hover {
+        opacity: .8;
+    }
+}
+
+.team__member-box:hover {
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: $main-color;
+    }
+
+    .team__member-links {
+        opacity: 1;
+    }
+}
+

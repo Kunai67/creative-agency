@@ -1,0 +1,56 @@
+.contact {
+    padding: 5rem 0;
+    text-align: center;
+
+    i {
+        color: $main-color;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.contact__form {
+    width: 60%;
+    margin: 3rem auto;
+
+    input, textarea {
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        background-color: #eeeeee;
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    textarea {
+        width: 100%;
+        height: 5rem;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #b0b0b0;
+    }
+
+    input:focus, textarea:focus {
+        color: gray;
+        outline: 2px solid $main-color;
+    }
+}
+
+.form__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__name, .form__email {
+    width: 49%;
+}
+
+.form__subject {
+    width: 100%;
+}

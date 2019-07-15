@@ -1,0 +1,62 @@
+.pricing {
+    padding: 5rem 0;
+    text-align: center;
+    .row {
+        margin-top: 4rem;
+    }
+}
+
+.pricing__box {
+    border: 1px solid lightgray;
+    padding: 3rem 0;
+    h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Varela";
+    }
+
+    h3,p {
+        color: gray;
+        margin-bottom: .25rem;
+        transition: 250ms color ease;
+    }
+
+    a {
+        display: inline-block;
+        padding: .5rem 2rem;
+        border: 2px solid $main-color;
+        margin-top: 1rem;
+    }
+}
+
+.pricing__box:hover {
+    h3 {
+        color: $main-color;
+    }
+
+    .pricing__price p {
+        color: white;
+    }
+}
+
+.pricing__price {
+    width: 8rem;
+    height: 8rem;
+    padding: 2rem;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem 0;
+
+    span {
+        font-size: 2rem;
+    }
+
+    p {
+        color: black;
+        font-weight: bold;
+        font-family: "Montserrat";
+        font-size: .8rem;
+    }
+}
